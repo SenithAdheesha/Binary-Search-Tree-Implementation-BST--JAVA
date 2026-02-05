@@ -36,5 +36,7 @@ public class Tree {
                 parent.left = newNode;
             }
         }
+        size++;
     }
 }
+
