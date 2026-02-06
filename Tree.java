@@ -39,4 +39,25 @@ public class Tree {
         size++;
     }
 }
+// public class TreeRecursice{
+
+//     TNode root;
+//     int size 
+
+//     public TreeRecursice(){
+//         root = null;
+//         size = 0
+//     }
+
+//     add(root,value){
+//         TNode newNode = new TNode(int value);
+//         root = newNode;
+
+//         if(root.value < value){
+//             add(root.right,value);
+//         }else{
+//             add(root.left, value);
+//         }
+
+//     }
 
