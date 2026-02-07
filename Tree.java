@@ -39,25 +39,63 @@ public class Tree {
         size++;
     }
 }
-// public class TreeRecursice{
+//search in iteration 
+   public TNode searchIter(int value) {
+        TNode temp = root;
+        while (temp != null) {
+            if (temp.value = value) {
+                break;
+            } else {
+                if (temp.value > value) {
+                    temp = temp.left;
+                } else {
+                    temp = temp.right;
+                }
+            }
 
-//     TNode root;
-//     int size 
+        }
+        return temp;
+    }
+    
+ }
+}
 
-//     public TreeRecursice(){
-//         root = null;
-//         size = 0
-//     }
+//search implementaion in recursion
+public TNode search(TNode root,int v){
+    if(root == null){
+        return null; 
+    }else {
+        if(root.value == v){
+            return root; 
+        }else { 
+            if(root.value < v){
+                return search(root.right, v);
+            }else { 
+                return search(root.left, v);
+            } 
+        } 
+    } 
+}
+public class TreeRecursice{
 
-//     add(root,value){
-//         TNode newNode = new TNode(int value);
-//         root = newNode;
+    TNode root;
+    int size 
 
-//         if(root.value < value){
-//             add(root.right,value);
-//         }else{
-//             add(root.left, value);
-//         }
+    public TreeRecursice(){
+        root = null;
+        size = 0
+    }
 
-//     }
+    add(root,value){
+        TNode newNode = new TNode(int value);
+        root = newNode;
+
+        if(root.value < value){
+            add(root.right,value);
+        }else{
+            add(root.left, value);
+        }
+
+    }
+
 
